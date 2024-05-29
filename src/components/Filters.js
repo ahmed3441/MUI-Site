@@ -55,7 +55,7 @@ const Filters = () => {
             {products.map((product, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card>
-                  <CardMedia component="img" height="240" image={product.image} alt={`Product ${index + 1}`} />
+                  <CardMedia component="img" height="250" image={product.image} alt={`Product ${index + 1}`} />
                   <CardContent>
                     <Typography variant="h6">{product.title}</Typography>
                     <Typography variant="body2">{product.description}</Typography>

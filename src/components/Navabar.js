@@ -101,7 +101,7 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
-          >  
+          >
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
@@ -110,7 +110,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 component={Link}
-                to={`/${page.toLowerCase()}`}
+                to={page === 'Home' ? '/' : `/${page.toLowerCase()}`}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
